@@ -91,12 +91,15 @@ python -m pip install “numpy<2.0”
 #### Check installed versions
 To check what libary versions you have installed:
 
-`python -m pip list`
+```bash
+python -m pip list
+```
 
 #### Force reinstall
 If you have conflicting versions, force reinstall with specific versions (example):
-
-`python -m pip install --force-reinstall "numpy>=1.24.0,<2.3.0"`
+```bash
+python -m pip install --force-reinstall "numpy>=1.24.0,<2.3.0"
+```
 
 ### 6. Additional Notes
 **Existing Libraries**: If you already installed some of these libraries for other QGIS plugins, the plugin may encounter errors due to **version conflicts**. Reinstall the libraries with the specified versions if needed.
@@ -109,12 +112,16 @@ Install Conda: If you haven't already, download and install Miniconda or Anacond
 
 ### 2. Create a New Environment: Open your terminal and create an environment specifically for QGIS.
 
-`conda create --name qgis_env python=3.12`
+```bash
+conda create --name qgis_env python=3.12
+```
 
 **Note**: You can replace qgis_env with any name you prefer.
 
 ### 3. Activate the Environment:
-`conda activate qgis_env`
+```bash
+conda activate qgis_env
+```
 
 ### 4. Install python libraries:
 ```bash 
@@ -122,10 +129,14 @@ conda install -c conda-forge numpy scipy pandas geopandas shapely rasterio xarra
 ```
 
 ### 5. Install QGIS: Use the community-maintained conda-forge channel to install QGIS.
-`conda install -c conda-forge qgis`
+```bash
+conda install -c conda-forge qgis
+```
 
 ### 6. Run QGIS:
-`qgis` 
+```bash
+qgis 
+```
 
 **Note: If errors arise due to version conflicts (most commonly with numpy or rasterio), please refer to the troubleshooting section for Windows.**
 
@@ -169,7 +180,9 @@ To verify that all libraries are installed correctly, open QGIS and:
 
 Alternatively, test the libraries in OSGeo4W Shell:
 
-`python -c "import numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime; print('All libraries imported successfully!')"`
+```bash
+python -c "import numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime; print('All libraries imported successfully!')"
+```
 
 # Contact info
 Yingkui Li
