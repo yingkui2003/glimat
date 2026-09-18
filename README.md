@@ -1,6 +1,8 @@
 # GLIMAT: a QGIS plugin for glacier lineation and ice margin analysis
 GLIMAT (Glacier Lineation and Ice Margin Analysis Toolkit) is a comprehensive QGIS plugin that integrates five complementary validation tools into a single, user-friendly interface: (1) APCA (Automated Proximity and Conformity Analysis) for ice margin offset comparison; (2) AFDA (Automated Flow Direction Analysis) for comparing modeled and observed flow directions; (3) LALA (Likelihood of Accordant Lineations Analysis) to quantify the likelihood of a glacier or ice sheet simulation aligning with the location and direction of observed glacial lineations; (4) APOA (Automated Polygon Overlap Analysis) for calculating F1‑score, IoU (Intersection over Union), precision, and recall between modeled ice extent and field‑mapped ice extent polygons; and (5) STPC (Surface/Thickness Point Comparison) for validating modeled ice surface elevation or thickness against field measurements at specific point locations. GLIMAT natively handles NetCDF files (one of the most common glacial model output formats), supports moving time windows for temporal smoothing, offers parallel processing for computational efficiency, and generates publication-ready visualizations. 
 
+A test dateset for this plugin can be downloaded from https://zenodo.org/records/22836601.
+
 # Installation Instructions
 ## In Windows:
 
