@@ -136,10 +136,11 @@ conda install -c conda-forge numpy scipy pandas geopandas shapely rasterio xarra
 The “GLIMAT” plugin will be added to the “Plugins” menu and on the Toolbar.
 
 The screenshot below shows how to install the plugin from the ZIP file: 1) click "Install from ZIP" on the left panel; 2) select the ZIP file; and 3) install the plugin and wait for the installation to complete.
-![alt text](Picture2.png)
+<img width="1077" height="726" alt="image" src="https://github.com/user-attachments/assets/75472e6f-3b3e-4dd6-985a-19cece01a57f" />
+
 
 If the installation is successful, run the GLIMAT plugin and you will see the interface below: 
-![alt text](Picture3.png)
+<img width="975" height="951" alt="image" src="https://github.com/user-attachments/assets/2c0e4d46-3a41-46fd-9209-422197f6ac38" />
 
 ## Troubleshooting: QGIS Freezes or Displays "Not Responding" during ZIP Installation
 
