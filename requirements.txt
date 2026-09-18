@@ -1,0 +1,15 @@
+# GLIMAT Plugin Dependencies
+# Target environment: QGIS 4.0 (Python 3.12 / PyQt6)
+# Generated: 2026-09-17
+
+numpy==1.26.4
+scipy==1.11.4
+pandas==2.2.2
+geopandas==0.14.4
+shapely==2.0.4
+rasterio==1.3.10
+xarray==2024.06.0
+matplotlib==3.8.4
+pyproj==3.6.1
+netCDF4==1.6.5
+cftime==1.6.4
