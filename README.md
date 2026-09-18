@@ -1,2 +1,171 @@
 # glimat
 GLIMAT: A QGIS plugin for comprehensive glacier and ice sheet model validation using geomorphological data
+# GLIMAT Plugin - Installation Instructions
+## In Windows:
+
+### 1. Install QGIS (>3.22)
+Download and install QGIS from the official website: https://qgis.org/download/
+
+### 2. Open OSGeo4W Shell
+#### Option A (Run as Administrator):
+- Right-click on OSGeo4W Shell (from the QGIS installation folder)
+- Select "Run as administrator"
+
+If you cannot see the "Run as administrator" option directly in the Start Menu:
+- Right-click on "OSGeo4W Shell" and select "Open file location".
+- In the folder that opens, right-click the "OSGeo4W Shell" shortcut again and select "Run as administrator"
+
+#### Option B:
+If your account has administrator privileges, simply open OSGeo4W Shell from the Start Menu
+
+**Note: Running as administrator is required to install Python packages.**
+
+### 3. Install Python Libraries
+
+#### Step 1: Update pip (Recommended)
+```bash
+python -m pip install --upgrade pip
+```
+#### Step 2: Install Required Libraries
+##### Option A (Recommended): Using requirements.txt 
+Open OSGeo4W Shell, navigate (cd) to the folder containing requirements.txt, and run:
+
+```bash
+python -m pip install -r requirements.txt
+```
+Or specify the full path directly (example):
+
+```bash
+python -m pip install -r "D:\Tools\GLIMAT_qgis\requirements.txt"
+```
+
+Note: replace D:\Tools\GLIMAT_qgis with your own folder name.
+
+#### Option B: Manual Installation
+```bash
+python -m pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
+```
+**Note: You can omit python -m and use pip directly**
+```bash
+pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
+```
+
+numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4
+
+### 4. Library Versions
+The plugin has been tested with the following library versions (saved in requirements.txt):
+```text
+numpy==1.26.4
+scipy==1.11.4
+pandas==2.2.2
+geopandas==0.14.4
+shapely==2.0.4
+rasterio==1.3.10
+xarray==2024.06.0
+matplotlib==3.8.4
+pyproj==3.6.1
+netCDF4==1.6.5
+cftime==1.6.4
+```
+
+A screenshot of "Run OSGeo4W as Administrator" is shown below. By following the steps described above, each required library should be installed sequentially by entering the corresponding command and pressing Enter. Wait for each installation to complete before proceeding to the next step.
+![alt text](Picture1.png)
+
+### 5. Troubleshooting Common Issues
+
+#### Rasterio installation issues
+This plugin require rasterio 1.4.3 or lower for reading TIF and ASC files. you encounter errors related to rasterio, you may need to install an older version:
+
+```bash
+python -m pip install “rasterio<1.4.4”
+```
+
+#### NumPy version conflicts or compatibility issues
+The plugin in QGIS4 works for numpy version of > 2.0. If you use lower versions, you may need to 
+downgrade numpy to 1.26.4
+
+```bash
+python -m pip install “numpy<2.0”
+```
+
+#### Check installed versions
+To check what libary versions you have installed:
+
+`python -m pip list`
+
+#### Force reinstall
+If you have conflicting versions, force reinstall with specific versions (example):
+
+`python -m pip install --force-reinstall "numpy>=1.24.0,<2.3.0"`
+
+### 6. Additional Notes
+**Existing Libraries**: If you already installed some of these libraries for other QGIS plugins, the plugin may encounter errors due to **version conflicts**. Reinstall the libraries with the specified versions if needed.
+
+## In MacOS and Linux
+
+### 1. Open Terminal on Mac/Linux. The bash window will show up.
+
+Install Conda: If you haven't already, download and install Miniconda or Anaconda for macOS.
+
+### 2. Create a New Environment: Open your terminal and create an environment specifically for QGIS.
+
+`conda create --name qgis_env python=3.12`
+
+**Note**: You can replace qgis_env with any name you prefer.
+
+### 3. Activate the Environment:
+`conda activate qgis_env`
+
+### 4. Install python libraries:
+```bash 
+conda install -c conda-forge numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
+```
+
+### 5. Install QGIS: Use the community-maintained conda-forge channel to install QGIS.
+`conda install -c conda-forge qgis`
+
+### 6. Run QGIS:
+`qgis` 
+
+**Note: If errors arise due to version conflicts (most commonly with numpy or rasterio), please refer to the troubleshooting section for Windows.**
+
+## Install the Q_ACME plugin in QGIS
+- Open QGIS
+- Click the “Plugins” menu and click “Manage and install Plugins…”
+- In the Plugins dialog, click Install from ZIP on the left panel. 
+- Browse the Q_ACME_plugin.zip file and install the plugin. 
+
+The “GLIMAT” plugin will be added to the “Plugins” menu and on the Toolbar.
+
+The screenshot below shows how to install the plugin from the ZIP file: 1) click "Install from ZIP" on the left panel; 2) select the ZIP file; and 3) install the plugin and wait for the installation to complete.
+![alt text](Picture2.png)
+
+If the installation is successful, run the GLIMAT plugin and you will see the interface below: 
+![alt text](Picture3.png)
+
+## Troubleshooting: QGIS Freezes or Displays "Not Responding" during ZIP Installation
+
+If QGIS freezes when clicking "Install from ZIP", it usually means a required Python dependency is missing or there is a still permission issue in Windows.
+
+#### Solution A (Recommended):
+- Close QGIS forcefully via Task Manager (Ctrl + Shift + Esc).
+- Open OSGeo4W Shell as Administrator.
+- Make sure all required libraries are installed (see previous steps).
+- Reopen QGIS as Administrator and try "Install from ZIP" again.
+
+#### Solution B (Manual Installation):
+- Extract (unzip) GLIMAT_plugin.zip.
+- Copy the unzipped "GLIMAT_plugin" folder directly into your QGIS plugins directory:
+%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\ or %APPDATA%\QGIS\QGIS4\profiles\default\python\plugins\ depending on your QGIS version.
+- Open QGIS, go to Plugins → Manage and Install Plugins → Installed, and enable GLIMAT.
+
+#### Verify Installation
+To verify that all libraries are installed correctly, open QGIS and:
+- Go to Plugins → Manage and Install Plugins
+- Select Installed tab
+- Find GLIMAT in the list
+- If it appears, the installation is successful
+
+Alternatively, test the libraries in OSGeo4W Shell:
+
+`python -c "import numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime; print('All libraries imported successfully!')"`
