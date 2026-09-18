@@ -69,9 +69,6 @@ netCDF4==1.6.5
 cftime==1.6.4
 ```
 
-A screenshot of "Run OSGeo4W as Administrator" is shown below. By following the steps described above, each required library should be installed sequentially by entering the corresponding command and pressing Enter. Wait for each installation to complete before proceeding to the next step.
-![alt text](Picture1.png)
-
 ### 5. Troubleshooting Common Issues
 
 #### Rasterio installation issues
