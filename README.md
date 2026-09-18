@@ -101,11 +101,11 @@ If you have conflicting versions, force reinstall with specific versions (exampl
 ### 6. Additional Notes
 **Existing Libraries**: If you already installed some of these libraries for other QGIS plugins, the plugin may encounter errors due to **version conflicts**. Reinstall the libraries with the specified versions if needed.
 
-## In MacOS and Linux
+## In MacOS
 
 ### 1. Open Terminal on Mac/Linux. The bash window will show up.
 
-Install Conda: If you haven't already, download and install Miniconda or Anaconda for macOS.
+Install Conda: If you haven't already, download and install Miniconda or Anaconda for macOS: https://www.anaconda.com/docs/getting-started/miniconda/install/mac-cli-install.
 
 ### 2. Create a New Environment: Open your terminal and create an environment specifically for QGIS.
 
