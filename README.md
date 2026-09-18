@@ -170,3 +170,18 @@ To verify that all libraries are installed correctly, open QGIS and:
 Alternatively, test the libraries in OSGeo4W Shell:
 
 `python -c "import numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime; print('All libraries imported successfully!')"`
+
+# Contact info
+Yingkui Li
+
+Department of Geography & Sustainability
+
+University of Tennessee
+
+Knoxville, TN 37996
+
+Email: yli32@utk.edu
+
+Website: https://geography.utk.edu/about-us/faculty/dr-yingkui-li/
+
+Google Scholar: https://scholar.google.com/citations?user=JoNuyCMAAAAJ&hl=en&oi=ao
