@@ -30,21 +30,6 @@ If your account has administrator privileges, simply open OSGeo4W Shell from the
 python -m pip install --upgrade pip
 ```
 #### Step 2: Install Required Libraries
-##### Option A (Recommended): Using requirements.txt 
-Open OSGeo4W Shell, navigate (cd) to the folder containing requirements.txt, and run:
-
-```bash
-python -m pip install -r requirements.txt
-```
-Or specify the full path directly (example):
-
-```bash
-python -m pip install -r "D:\Tools\GLIMAT_qgis\requirements.txt"
-```
-
-Note: replace D:\Tools\GLIMAT_qgis with your own folder name.
-
-#### Option B: Manual Installation
 ```bash
 python -m pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
 ```
@@ -53,25 +38,7 @@ python -m pip install numpy scipy pandas geopandas shapely rasterio xarray matpl
 pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
 ```
 
-numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4
-
-### 4. Library Versions
-The plugin has been tested with the following library versions (saved in requirements.txt):
-```text
-numpy==1.26.4
-scipy==1.11.4
-pandas==2.2.2
-geopandas==0.14.4
-shapely==2.0.4
-rasterio==1.3.10
-xarray==2024.06.0
-matplotlib==3.8.4
-pyproj==3.6.1
-netCDF4==1.6.5
-cftime==1.6.4
-```
-
-### 5. Troubleshooting Common Issues
+### 4. Troubleshooting Common Issues
 
 #### Rasterio installation issues
 This plugin require rasterio 1.4.3 or lower for reading TIF and ASC files. you encounter errors related to rasterio, you may need to install an older version:
@@ -101,8 +68,9 @@ If you have conflicting versions, force reinstall with specific versions (exampl
 python -m pip install --force-reinstall "numpy>=1.24.0,<2.3.0"
 ```
 
-### 6. Additional Notes
+### 5. Additional Notes
 **Existing Libraries**: If you already installed some of these libraries for other QGIS plugins, the plugin may encounter errors due to **version conflicts**. Reinstall the libraries with the specified versions if needed.
+**QGIS crash**: IF QGIS keeps crashing when running this plugin, you may need to remove the QGIS in your computer and reinstall it again.
 
 ## In MacOS
 
