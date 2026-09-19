@@ -162,6 +162,6 @@ Knoxville, TN 37996
 
 Email: yli32@utk.edu
 
-Website: https://geography.utk.edu/about-us/faculty/dr-yingkui-li/
+Website: [https://geography.utk.edu/about-us/faculty/dr-yingkui-li/](https://geography.utk.edu/people/instructional-faculty/li-yingkui/)
 
 Google Scholar: https://scholar.google.com/citations?user=JoNuyCMAAAAJ&hl=en&oi=ao
