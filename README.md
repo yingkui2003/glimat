@@ -112,13 +112,13 @@ qgis
 
 **Note: If errors arise due to version conflicts (most commonly with numpy or rasterio), please refer to the troubleshooting section for Windows.**
 
-## Install the Q_ACME plugin in QGIS
+## Install the GLIMAT plugin in QGIS
 - Open QGIS
 - Click the “Plugins” menu and click “Manage and install Plugins…”
 - In the Plugins dialog, click Install from ZIP on the left panel. 
-- Browse the Q_ACME_plugin.zip file and install the plugin. 
+- Browse the GLIMAT_plugin.zip file and install the plugin. 
 
-The “GLIMAT” plugin will be added to the “Plugins” menu and on the Toolbar.
+The GLIMAT plugin will be added to the “Plugins” menu and on the Toolbar.
 
 The screenshot below shows how to install the plugin from the ZIP file: 1) click "Install from ZIP" on the left panel; 2) select the ZIP file; and 3) install the plugin and wait for the installation to complete.
 <img width="1077" height="726" alt="image" src="https://github.com/user-attachments/assets/75472e6f-3b3e-4dd6-985a-19cece01a57f" />
@@ -150,11 +150,6 @@ To verify that all libraries are installed correctly, open QGIS and:
 - Find GLIMAT in the list
 - If it appears, the installation is successful
 
-Alternatively, test the libraries in OSGeo4W Shell:
-
-```bash
-python -c "import numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime; print('All libraries imported successfully!')"
-```
 
 # Contact info
 Yingkui Li
