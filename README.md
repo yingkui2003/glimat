@@ -58,6 +58,7 @@ pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pypr
 
 ### 4. Library Versions
 The plugin has been tested with the following library versions (saved in requirements.txt):
+
 For QGIS 3 (Python version < 3.12.13):
 ```text
 numpy==1.26.4
