@@ -48,7 +48,7 @@ python -m pip install “rasterio<1.4.4”
 ```
 
 #### NumPy version conflicts or compatibility issues
-The plugin in QGIS4 works for numpy version of > 2.0. If you use lower versions, you may need to 
+The plugin in QGIS4 works for numpy version up to > 2.4.6. If you use lower versions with errors related to numpy, you may need to 
 downgrade numpy to 1.26.4
 
 ```bash
