@@ -30,6 +30,23 @@ If your account has administrator privileges, simply open OSGeo4W Shell from the
 python -m pip install --upgrade pip
 ```
 #### Step 2: Install Required Libraries
+##### Option A (Recommended): Using requirements.txt 
+Open OSGeo4W Shell, navigate (cd) to the folder containing requirements.txt, and run:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Or specify the full path directly (example):
+
+```bash
+python -m pip install -r "D:\Tools\GLIMAT\requirements.txt"
+```
+
+Note: replace D:\Tools\GLIMAT with your own folder name.
+
+#### Option B: Manual Installation
+
 ```bash
 python -m pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
 ```
@@ -37,8 +54,40 @@ python -m pip install numpy scipy pandas geopandas shapely rasterio xarray matpl
 ```bash
 pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
 ```
+**Note: If you have other QGIS plugins installed, you may encounter errors due to Python library conflicts. These errors can generally be ignored—GLIMAT will still run correctly as long as its own dependencies are satisfied.**
 
-### 4. Troubleshooting Common Issues
+### 4. Library Versions
+The plugin has been tested with the following library versions (saved in requirements.txt):
+For QGIS 3 (Python version < 3.12.13):
+```text
+numpy==1.26.4
+rasterio==1.4.3
+scipy==1.13.0
+pandas==2.2.2
+geopandas==1.0.0
+shapely==2.0.6
+xarray==2025.10.1
+matplotlib==3.8.4
+pyproj==3.7.0
+netCDF4==1.7.3
+cftime==1.6.5
+```
+For QGIS 4 (Python version >= 3.12.13):
+```text
+numpy==2.4.6
+rasterio==1.4.3
+scipy==1.17.1
+pandas==3.0.3
+geopandas==1.1.3
+shapely==2.1.2
+xarray==2025.10.1
+matplotlib==3.10.9
+pyproj==3.7.2
+netCDF4==1.7.3
+cftime==1.6.5
+```
+
+### 5. Troubleshooting Common Issues
 
 #### Rasterio version issues
 This plugin require rasterio 1.4.3 or lower for reading TIF and ASC files. you encounter errors related to rasterio, you may need to install an older version:
@@ -56,7 +105,7 @@ python -m pip install “numpy<2.0”
 ```
 
 #### Check installed versions
-To check what libary versions you have installed:
+To check what libary versions you have installed (and compare with the verions listed above for QGIS 3 and QGIS 4):
 
 ```bash
 python -m pip list
