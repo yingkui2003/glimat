@@ -76,7 +76,7 @@ If QGIS keeps crashing when running this plugin, you may need to uninstall QGIS 
 
 ## In MacOS
 
-### 1. Open Terminal on Mac/Linux. The bash window will show up.
+### 1. Open Terminal on Mac. The bash window will show up.
 
 Install Conda: If you haven't already, download and install Miniconda or Anaconda for macOS: https://www.anaconda.com/docs/getting-started/miniconda/install/mac-cli-install.
 
