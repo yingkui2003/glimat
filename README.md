@@ -30,7 +30,7 @@ If your account has administrator privileges, simply open OSGeo4W Shell from the
 python -m pip install --upgrade pip
 ```
 #### Step 2: Install Required Libraries
-##### Option A (Recommended): Using requirements.txt 
+##### Option A (Recommended): Using requirements.txt (you can download this file from this GitHub site)
 Open OSGeo4W Shell, navigate (cd) to the folder containing requirements.txt, and run:
 
 ```bash
@@ -98,7 +98,7 @@ python -m pip install “rasterio<1.4.4”
 ```
 
 #### NumPy version conflicts or compatibility issues
-The plugin in QGIS4 works for numpy version up to > 2.4.6. If you use lower versions with errors related to numpy, you may need to 
+The plugin in QGIS4 works for numpy version up to 2.4.6. If you use lower versions with errors related to numpy, you may need to 
 downgrade numpy to 1.26.4
 
 ```bash
