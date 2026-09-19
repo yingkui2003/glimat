@@ -40,7 +40,7 @@ pip install numpy scipy pandas geopandas shapely rasterio xarray matplotlib pypr
 
 ### 4. Troubleshooting Common Issues
 
-#### Rasterio installation issues
+#### Rasterio version issues
 This plugin require rasterio 1.4.3 or lower for reading TIF and ASC files. you encounter errors related to rasterio, you may need to install an older version:
 
 ```bash
