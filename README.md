@@ -71,7 +71,7 @@ python -m pip install --force-reinstall "numpy>=1.24.0,<2.3.0"
 ### 5. Additional Notes
 **Existing Libraries**: If you already installed some of these libraries for other QGIS plugins, the plugin may encounter errors due to **version conflicts**. Reinstall the libraries with the specified versions if needed.
 
-**QGIS crash**: IF QGIS keeps crashing when running this plugin, you may need to remove the QGIS in your computer and reinstall it again.
+**QGIS Crashes**: If QGIS keeps crashing when running this plugin, you may need to uninstall QGIS from your computer and reinstall it.
 
 ## In MacOS
 
