@@ -80,7 +80,8 @@ If QGIS keeps crashing when running this plugin, you may need to uninstall QGIS 
 
 Install Conda: If you haven't already, download and install Miniconda or Anaconda for macOS: https://www.anaconda.com/docs/getting-started/miniconda/install/mac-cli-install.
 
-### 2. Create a New Environment: Open your terminal and create an environment specifically for QGIS.
+### 2. Create a new environment for QGIS 
+Open your terminal and create an environment specifically for QGIS.
 
 ```bash
 conda create --name qgis_env python=3.12
@@ -88,22 +89,23 @@ conda create --name qgis_env python=3.12
 
 **Note**: You can replace qgis_env with any name you prefer.
 
-### 3. Activate the Environment:
+### 3. Activate the environment
 ```bash
 conda activate qgis_env
 ```
 
-### 4. Install python libraries:
+### 4. Install python libraries
 ```bash 
 conda install -c conda-forge numpy scipy pandas geopandas shapely rasterio xarray matplotlib pyproj netCDF4 cftime
 ```
 
-### 5. Install QGIS: Use the community-maintained conda-forge channel to install QGIS.
+### 5. Install QGIS 
+Use the community-maintained conda-forge channel to install QGIS.
 ```bash
 conda install -c conda-forge qgis
 ```
 
-### 6. Run QGIS:
+### 6. Run QGIS
 ```bash
 qgis 
 ```
